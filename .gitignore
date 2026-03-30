@@ -1,0 +1,18 @@
+#Eclipse project files
+.project
+.classpath
+.settings/
+#Test output directories
+test-output/
+surefire-reports/
+allure-results/
+#logs
+*.logs
+logs/
+#Temp files
+*.tmp 
+*.bak
+*~
+#jenkins-specific files
+jenkins-reports/
+/bin/

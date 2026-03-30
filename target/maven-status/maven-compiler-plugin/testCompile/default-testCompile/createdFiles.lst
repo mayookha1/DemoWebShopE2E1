@@ -1,0 +1,7 @@
+com\qa\demoshop\testcases\ComputerPageTest.class
+com\qa\demoshop\testcases\WelcomePageTest.class
+com\qa\demoshop\testcases\ElectronicsPageTest.class
+com\qa\demoshop\testcases\RegisterPageFailTest.class
+com\qa\demoshop\testcases\RegisterPageTest.class
+com\qa\demoshop\base\BaseTest.class
+com\qa\demoshop\testcases\ApparelTest.class
