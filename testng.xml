@@ -23,6 +23,7 @@
 			<class name="com.qa.demoshop.testcases.WelcomePageTest" />
 			<class name="com.qa.demoshop.testcases.RegisterPageTest" />
 			<class name="com.qa.demoshop.testcases.sample"></class>
+
 		</classes>
 	</test> <!--
 	Test -->
