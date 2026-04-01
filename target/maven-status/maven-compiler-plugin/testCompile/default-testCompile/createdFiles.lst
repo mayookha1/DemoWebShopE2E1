@@ -1,0 +1,11 @@
+com\qa\demoshop\testcases\ComputerPageTest.class
+<<<<<<< HEAD
+com\qa\demoshop\testcases\sample.class
+=======
+>>>>>>> a31415f43e902e267bd7f9ef86befa5bdbe6b6a4
+com\qa\demoshop\testcases\WelcomePageTest.class
+com\qa\demoshop\testcases\ElectronicsPageTest.class
+com\qa\demoshop\testcases\RegisterPageFailTest.class
+com\qa\demoshop\testcases\RegisterPageTest.class
+com\qa\demoshop\base\BaseTest.class
+com\qa\demoshop\testcases\ApparelTest.class
