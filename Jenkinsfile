@@ -7,7 +7,7 @@ pipeline {
     }
 
     parameters {
-        string(name: 'suiteXmlFile', defaultValue: 'testng.xml')
+        string(name: 'suiteXmlFile', defaultValue: 'Failedtestng.xml')
         choice(name: 'browser', choices: ['chrome', 'firefox', 'edge'])
         booleanParam(name: 'headless', defaultValue: true)
         booleanParam(name: 'incognito', defaultValue: true)
@@ -79,7 +79,24 @@ pipeline {
                 }
             }
         }
-
+        stage('Debug ChainTest Report'){
+			steps{
+				bat 'dir target /s'
+			}
+		}
+stage('Publish ChainTest HTML Report'){
+	steps{
+		publishHTML([
+			allowMissing: true,
+			alwaysLinkToLastBuild: false,
+			keepAll: true,
+			reportDir: 'target/chaintest',
+			reportFiles: 'index.html',
+			reportName: 'HTML Regression ChainTest Report',
+			reportTitles: 'DemoShopUI_Automation'
+		])
+	}
+}
         stage('Archive Reports') {
             steps {
                 archiveArtifacts artifacts: 'target/**/*', fingerprint: true
